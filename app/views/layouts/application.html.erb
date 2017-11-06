@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A preparation course to ace the First Certificate Exam.">
+    <title>FCE Target Practice &ndash; Super Easy FCE</title>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" 
+    href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" 
+    integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" 
+    href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+    <link rel="stylesheet" 
+    href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
