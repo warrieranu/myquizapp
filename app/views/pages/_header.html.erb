@@ -3,9 +3,52 @@
         <a class="pure-menu-heading" href="">FCE Target Practice</a>
 
         <ul class="pure-menu-list" id="yui_3_18_1_1_1509626020099_15">
-            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Pricing</a></li>
+            <li class="pure-menu-item pure-menu-selected">Pricing</a></li>
             <li class="pure-menu-item" id="yui_3_18_1_1_1509626020099_14"><a href="#" class="pure-menu-link" id="yui_3_18_1_1_1509626020099_13">FAQ</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sign Up</a></li>
+            <li class="pure-menu-item">
+              <%= link_to 'Sign Up', "#", class: "pure-menu-link", data: {toggle: "modal", target: "#popUpSignUp"} %>
+            </li>
         </ul>
     </div>
 </div>
+
+
+
+<!-- From Pure CSS website
+<div id="popUpSignUp" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <h1 id="myModalLabel">A Bootstrap Modal with Pure</h1>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                This modal is launched by including <em>just</em> the <code>modal.css</code> and <code>modal.js</code> file from Bootstrap, and including Pure to drive all low-level styles. The result is a fully-functional Modal using just a fraction of the CSS.
+            </p>
+
+            <form class="pure-form pure-form-stacked">
+                <legend>A Stacked Form</legend>
+
+                <label for="email">Email</label>
+                <input id="email" type="text" placeholder="Email">
+
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password">
+
+                <label for="state">State</label>
+                <select id="state">
+                    <option>AL</option>
+                    <option>CA</option>
+                    <option>IL</option>
+                </select>
+
+                <label class="pure-checkbox">
+                    <input type="checkbox"> Remember me
+                </label>
+            </form>
+        </div>
+
+        <div class="modal-footer">
+            <button class="pure-button" data-dismiss="modal" aria-hidden="true">Close</button>
+            <button class="pure-button pure-button-primary">Submit</button>
+        </div>
+    </div> -->
